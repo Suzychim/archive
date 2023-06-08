@@ -6,4 +6,29 @@ background-color: black;
 
 }
 
-        
+#trail {
+    position: absolute;
+    font-family: Courier New;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000000;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+#trail.active {
+    animation: trailAnimation 0.5s infinite;
+}
+
+@keyframes trailAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+    
